@@ -2,6 +2,11 @@
 
     /*===Header styles===*/
 
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
     #navbar-options {
         display: none;
     }
@@ -9,18 +14,15 @@
     #navbar-options.active {
         display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        width: 100%;
         padding-top: 16px;
         padding-bottom: 16px;
         align-items: center;
-        background-color: #10B98166;
-        backdrop-filter: blur(10px);
         gap: 24px;
         z-index: 1000;
+    }
+
+    #navbar-options.active a {
+        color: #FFFFFF;
     }
 
     #mobile-menu {
@@ -123,5 +125,68 @@
     }
 
     /*===Footer styles===*/
+
+}
+
+@media (max-width: 420px) {
+
+    /*===Global styles===*/
+
+    h1 {
+        font-size: 48px;
+    }
+
+    /*===Global styles===*/
+
+    /*===Header styles===*/
+
+    nav {
+        padding: 16px;
+        gap: 16px;
+    }
+
+    #menu-bar {
+        gap: 16px;
+    }
+
+    /*===Header styles===*/
+
+    /*===Suscription plans section styles===*/
+
+    #suscription-plans-section .card {
+        padding: 32px;
+        width: 65%;
+        border-radius: 16px;
+    }
+
+    .card h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .card h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .card p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .card ul {
+        margin-top: auto;
+        margin-bottom: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .card li {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /*===Suscription plans section styles===*/
 
 }

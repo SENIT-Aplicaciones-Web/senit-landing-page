@@ -16,3 +16,31 @@ menuBtn.addEventListener("click", () => {
     const expanded = menuBtn.getAttribute("aria-expanded") === "true";
     menuBtn.setAttribute("aria-expanded", !expanded);
 });
+
+const enBtn = document.querySelector("#en-btn");
+const esBtn = document.querySelector("#es-btn");
+
+function setLanguage(language) {
+
+    const textElements = document.querySelectorAll("[data-i18n]");
+
+    textElements.forEach(element => {
+
+        const key = element.dataset.i18n;
+        const translation = translations[language][key];        
+
+        if (translation) {
+            element.textContent = translation;
+        }
+
+    })
+
+}
+
+enBtn.addEventListener("click", () => {
+    setLanguage("en_US");
+});
+
+esBtn.addEventListener("click", () => {
+    setLanguage("es_419");
+});
