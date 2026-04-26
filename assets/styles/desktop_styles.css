@@ -1,0 +1,511 @@
+/*===Global styles===*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Microsoft Sans Serif', Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+html {
+    scroll-padding-top: 110px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 64px;
+    color: #1E3A8A;
+    text-align: center;
+}
+
+textarea {
+    resize: none;
+}
+
+/*===Global styles===*/
+
+
+/*===Header styles===*/
+
+header {    
+    background-color: #10B98166;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-height: 121px;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 48px 32px 48px;
+    gap: 32px;
+}
+
+#senit-logo-container img {
+    max-width: 200px;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+#navbar-options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 48px;
+}
+
+#navbar-options button {
+    padding: 8px 16px;
+    border-style: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #2563EB;
+    transition: all 0.4s;
+}
+
+#navbar-options button:hover {
+    scale: 110%;
+    color: #2563EB;
+    background-color: #FFFFFF;
+}
+
+#navbar-options button:active {
+    scale: 90%;
+}   
+
+#navbar-options a {
+    text-decoration: none;
+    color: #2563EB;
+    transition: all 0.4s;
+}
+
+#navbar-options a:hover {
+    scale: 120%;
+}
+
+#navbar-options a:active {
+    scale: 100%;
+    color: #FFFFFF;
+}
+
+/*===Header styles===*/
+
+
+/*===Hero section styles===*/
+
+#hero-section {
+    padding: 32px;
+    gap: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#hero-image-container img {
+    width: 100%;
+    max-width: 560px;
+    min-width: 400px;  
+    height: auto;
+}
+
+#hero-text {
+    max-width: 700px;
+    margin-top: 64px;
+    margin-right: 64px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 32px;
+}
+
+#hero-description {
+    color: #49444A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 620px;
+    gap: 32px;
+}
+
+#hero-description h3 {
+    font-size: 24px;
+}
+
+#hero-cta {
+    margin-top: 32px;
+    text-decoration: none;
+    font-size: 32px;
+    color: #FFFFFF;
+    padding: 16px 48px;
+    border-radius: 16px;
+    background: linear-gradient(90deg, #2563EB 0%, #10B981 100%);
+    transition: all 0.4s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#hero-cta:hover {
+    scale: 110%;
+}
+
+#hero-cta:active {
+    scale: 90%;
+}
+
+/*===Hero section styles===*/
+
+
+/*===Functionality section styles===*/
+
+#functionality-section {
+    padding: 64px;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#functions {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 64px;
+}
+
+.card-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+#mobile-icon {
+    display: none;
+}
+
+#desktop-icon, #icon {
+    font-size: 128px;
+}
+
+.left-card, .right-card, .center-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    max-width: 350px;
+    gap: 16px;
+    border-radius: 24px;
+    color:#FFFFFF;
+    min-height: 180px;
+    background: linear-gradient(90deg, #2563EB 0%, #10B981 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+}
+
+.left-card h2, .right-card h2, .center-card h2 {
+    font-size: 32px
+}
+
+.left-card h3, .right-card h3, .center-card h3 {
+    font-size: 20px;
+}
+
+.left-card:hover, .right-card:hover, .center-card:hover {
+    scale: 105%;
+}
+
+.left-card {
+    background: linear-gradient(90deg, #2563EB 0%, #10B981 100%);  
+}
+
+.right-card {
+    background: linear-gradient(90deg, #10B981 0%, #2563EB 100%);    
+}
+
+.center-card {
+    background: linear-gradient(90deg, #2563EB 0%, #10B981 50%, #2563EB 100%);  
+}
+
+#security {
+    margin-bottom: 64px;
+}
+
+/*===Functionality section styles===*/
+
+
+/*===Suscription plans section styles===*/
+
+#suscription-plans-section {
+    padding: 32px;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#suscription-plans-section .card-row {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+    background: radial-gradient(#98989E 0%, #49444A 80%);
+    border-radius: 32px;
+    gap: 12px;
+    min-height: 500px;
+    max-width: 300px;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.5s;
+}
+
+.card h3 {
+    font-size: 32px;
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.card p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.card ul {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card li {
+    font-size: 16px;
+}
+
+.card a {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-top: auto;
+    padding: 16px;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(90deg, #2563EB 0%, #10B981 100%);
+    transition: all 0.5s;
+}
+
+.card:hover {
+    scale: 105%;
+}
+
+.card a:hover {
+    scale: 105%;
+}
+
+.card a:active {
+    scale: 100%;
+}
+
+.card.basic a {
+    background: linear-gradient(90deg, #10B981 0%, #2563EB 100%);
+}
+
+.card.pro a {
+    background: #2563EB;
+}
+
+.card.custom a {
+    background: linear-gradient(90deg, #2563EB 0%, #10B981 100%);
+}
+
+
+/*===Suscription plans section styles===*/
+
+
+/*===Contact form section styles===*/
+
+#contact-section {
+    padding: 64px;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+#contact-container {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+}
+
+#contact-image-container img {
+    width: 100%;
+    max-width: 720px;
+    min-width: 400px;
+    height: auto;
+}
+
+#contact-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    border-radius: 32px;
+    gap: 64px;
+    background: linear-gradient(#2563EB 0%, #10B981 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#data-container {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+}
+
+#user-data {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+form label {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+form input {
+    color: #000000;
+    font-size: 16px;
+    padding: 16px;
+    border-radius: 16px;
+    border-style: none;
+}
+
+.form-item textarea {
+    padding: 8px;
+    border-radius: 16px;
+}
+
+#contact-container button {
+    margin-top: auto;
+    padding: 16px 96px;
+    border-radius: 24px;
+    font-size: 24px;
+    border-style: none;
+    color: #FFFFFF;
+    background-color: #2563EB;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s;
+}
+
+#contact-container button:hover {
+    scale: 105%;
+}
+
+#contact-container button:active {
+    scale: 100%;
+}
+
+/*===Contact form section styles===*/
+
+
+/*===Footer styles===*/
+
+footer {   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    background: linear-gradient(#10B981 39%, #2563EB 100%);
+    color: #FFFFFF;
+}
+
+#footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    text-align: center;
+    width: 100%;
+}
+
+#footer-top h3 {
+    font-size: 24px;
+}
+
+#senit-social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 225px;
+    gap: 16px;
+}
+
+#social-media-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+}
+
+#social-media-icons i {
+    font-size: 32px;
+    color: #FFFFFF;
+    transition: all 0.3s;
+}
+
+#social-media-icons i:hover {
+    color: #1E3A8A;
+}
+
+#footer-bottom {
+    justify-content: center;
+    text-align: center;
+}
+
+#footer-bottom h4 {
+    font-size: 14px;
+}
+
+#senit-social-media img {
+    max-width: 164px;
+    
+}
+
+#senit-direct-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/*===Footer styles===*/
