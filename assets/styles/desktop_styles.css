@@ -115,11 +115,11 @@ nav {
 /*===Hero section styles===*/
 
 #hero-section {
-    padding: 32px;
-    gap: 32px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center; 
+    gap: 32px;
+    padding: 32px;
 }
 
 #hero-image-container img {
@@ -516,3 +516,237 @@ footer {
 }
 
 /*===Footer styles===*/
+
+
+/* =========================================================
+   TERMS & CONDITIONS PAGE - SENIT
+   Solo estilos para el contenido de términos y condiciones
+========================================================= */
+
+.terms-page-section {
+    padding: 7rem 0 5rem;
+    background: #f8fafc;
+}
+
+.terms-page-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.terms-page-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.terms-page-badge {
+    display: inline-block;
+    padding: 0.45rem 1rem;
+    border-radius: 999px;
+    background: rgba(15, 23, 42, 0.08);
+    color: #0f172a;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.terms-page-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.terms-page-subtitle {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #475569;
+}
+
+.terms-page-meta {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9rem;
+    flex-wrap: wrap;
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+.terms-page-meta .dot {
+    font-size: 0.7rem;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.terms-page-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* =========================
+   MAIN BLOCKS
+========================= */
+
+.terms-block {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 2.2rem;
+    box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05);
+    border: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.terms-block h2 {
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 1.2rem;
+    line-height: 1.3;
+}
+
+.terms-block p {
+    font-size: 1rem;
+    line-height: 1.9;
+    color: #334155;
+    margin-bottom: 1rem;
+}
+
+/* =========================
+   LISTS
+========================= */
+
+.terms-list {
+    margin-top: 1rem;
+    padding-left: 1.4rem;
+}
+
+.terms-list li {
+    margin-bottom: 1rem;
+    color: #334155;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+/* =========================
+   SUBBLOCKS
+========================= */
+
+.terms-subblock {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: #f8fafc;
+    border-left: 4px solid #0f172a;
+}
+
+.terms-subblock h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 0.8rem;
+}
+
+.terms-subblock p {
+    margin-bottom: 0;
+}
+
+/* =========================
+   WARNING / IMPORTANT BOX
+========================= */
+
+.terms-warning {
+    margin-top: 1.5rem;
+    padding: 1.2rem 1.4rem;
+    border-radius: 14px;
+    background: rgba(239, 68, 68, 0.08);
+    border: 1px solid rgba(239, 68, 68, 0.18);
+    color: #7f1d1d;
+    line-height: 1.8;
+    font-size: 0.97rem;
+}
+
+.terms-warning strong {
+    font-weight: 700;
+}
+
+/* =========================
+   FOOTER NOTE
+========================= */
+
+.terms-footer-note {
+    margin-top: 2rem;
+    text-align: center;
+    color: #64748b;
+}
+
+.terms-footer-note p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+.terms-block a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.terms-block a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .terms-page-section {
+        padding: 5rem 0 3rem;
+    }
+
+    .terms-page-container {
+        padding: 0 1rem;
+    }
+
+    .terms-page-title {
+        font-size: 2.2rem;
+    }
+
+    .terms-page-subtitle {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .terms-block {
+        padding: 1.5rem;
+    }
+
+    .terms-block h2 {
+        font-size: 1.3rem;
+    }
+
+    .terms-block p,
+    .terms-list li {
+        font-size: 0.96rem;
+        line-height: 1.8;
+    }
+
+    .terms-subblock {
+        padding: 1.2rem;
+    }
+}

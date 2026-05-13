@@ -1,12 +1,18 @@
 import { translations } from "./translations.js";
 
-const form = document.querySelector("form")
+const form = document.querySelector("form");
 
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    console.log("Mensaje enviado");
-    alert("Mensaje enviado");
-});
+if (form) {
+
+    form.addEventListener("submit", (e) => {
+
+        e.preventDefault();
+        console.log("Mensaje enviado");
+        alert("Mensaje enviado");
+
+    });
+
+}
 
 const menuBtn = document.querySelector("#menu-btn");
 const navbar = document.querySelector("#navbar-options");
@@ -30,7 +36,7 @@ function setLanguage(language) {
         const translation = translations[language][key];        
 
         if (translation) {
-            element.textContent = translation;
+            element.innerHTML = translation;
         }
 
     })
