@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Optimiza tu hostal o motel con Senit. Control por horas, facturación SUNAT y gestión de limpieza en tiempo real">
+    <meta name="keywords"
+        content="software hotelero peru, gestión moteles por horas, pms, facturacion electronica hoteles, control de hoteles peru">
+    <meta name="author" content="Senit Startup Team">
+    <link rel="stylesheet" href="./assets/styles/desktop_styles.css">
+    <link rel="stylesheet" href="./assets/styles/mobile_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script type="module" src="./assets/scripts/main.js" defer></script>
+    <title>Senit</title>
+</head>
+<body>
+<!-- Header & Navigation -->
+ <header>
+
+        <nav>
+            
+            <div id="menu-bar">
+
+                <div id="senit-logo-container">
+
+                <img src="./assets/images/SENIT_logo.png" alt="Logo de senit">
+
+                </div>
+
+                <div id="mobile-menu">
+
+                    <button aria-label="Menu" id="menu-btn" aria-expanded="false">☰</button>
+
+                </div>
+                
+            </div>
+
+
+            <div id="navbar-options">
+
+                <button id="en-btn">EN</button>
+                <button id="es-btn">ES</button>
+
+                <a href="index.html" data-i18n="navbar.start" href="#">Inicio</a>
+                <a data-i18n="navbar.functions" href="#functionality-section">Funcionalidades</a>
+                <a data-i18n="navbar.plans" href="#suscription-plans-section">Planes</a>
+                <a data-i18n="navbar.contact" href="#contact-section">Contáctanos</a>
+                <a data-i18n="navbar.login" href="#">Ingresa</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+<main>
+    <!-- TERMS HERO SECTION -->
+    <section id="terms-page" class="section terms-page-section">
+        <div class="container terms-page-container">
+
+            <div class="terms-page-header">
+                <span class="terms-page-badge" data-i18n="terms.badge">
+                    Documento Legal
+                </span>
+
+                <h1 class="terms-page-title" data-i18n="terms.title">
+                     Términos y Condiciones de Uso
+                </h1>
+
+                <p class="terms-page-subtitle" data-i18n="terms.subtitle">
+                    Conozca las condiciones legales, éticas y de privacidad relacionadas con el uso de la plataforma Senit.
+                </p>
+
+                <div class="terms-page-meta">
+                     <span data-i18n="terms.version">
+                        Versión: 1.0
+                    </span>
+
+                    <span class="dot">•</span>
+
+                    <span data-i18n="terms.date">
+                        Fecha de vigencia: Mayo 2026
+                    </span>
+                </div>
+            </div>
+
+            <div class="terms-page-content">
+
+                <!-- 1 -->
+                <div class="terms-block">
+                    <h2 data-i18n="terms.s1.title">
+                     1. Aceptación de los Términos
+                    </h2>
+
+                     <p data-i18n="terms.s1.p1">
+                        Al acceder y utilizar la plataforma web <strong>Senit</strong>, desarrollada por el equipo del proyecto académico en el marco del curso
+                        <em>1ASI10203 - Aplicaciones Web</em> de la Universidad Peruana de Ciencias Aplicadas (UPC), el usuario declara haber leído,
+                        comprendido y aceptado íntegramente los presentes Términos y Condiciones de Uso. Si el usuario no está de acuerdo con alguno de estos términos,
+                        deberá abstenerse de utilizar la plataforma.
+                    </p>
+                </div>
+
+                <!-- 2 -->
+                <div class="terms-block">
+                      <h2 data-i18n="terms.s2.title">
+                        2. Descripción del Servicio
+                    </h2>
+
+                    <p data-i18n="terms.s2.p1">
+                        <strong>Senit</strong> es una plataforma web orientada a la gestión digital de hoteles, hostales y moteles. El sistema permite administrar
+                        reservas, habitaciones, huéspedes, comprobantes electrónicos y procesos operativos internos mediante herramientas centralizadas y reportes en tiempo real.
+                    </p>
+
+                    <ul class="terms-list">
+                        <li data-i18n="terms.s2.l1">
+                            <strong>Propietarios y administradores:</strong> gestión de reservas, habitaciones, control operativo y monitoreo del negocio.</li>
+
+                        <li data-i18n="terms.s2.l2"><strong>Recepcionistas y trabajadores:</strong> registro de huéspedes, control de check-in/check-out y administración de habitaciones.</li>
+
+                         <li data-i18n="terms.s2.l3"><strong>Huéspedes:</strong> acceso a reservas, información de habitaciones y gestión básica de estadías.</li>
+                    </ul>
+
+                    <div class="terms-warning">
+                       <strong data-i18n="terms.s2.warningTitle">
+                        Aviso importante:
+                    </strong>
+
+                        <span data-i18n="terms.s2.warningText">
+                            Senit es un proyecto académico desarrollado con fines educativos y de investigación. Algunas funcionalidades pueden encontrarse en etapa de prototipo
+                            o simulación y no constituyen un servicio comercial definitivo.
+                        </span>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="terms-block">
+                      <h2 data-i18n="terms.s3.title">
+                        3. Registro y Acceso al Sistema
+                    </h2>
+
+                    <ul class="terms-list">
+                        <li data-i18n="terms.s3.l1">
+                            El acceso a la plataforma requiere el registro de una cuenta con credenciales válidas asignadas por el administrador del establecimiento.</li>
+
+                         <li data-i18n="terms.s3.l2">
+                            Cada usuario es responsable de mantener la confidencialidad de su contraseña y de evitar el acceso no autorizado a su cuenta.</li>
+
+                         <li data-i18n="terms.s3.l3">
+                            Las cuentas son personales e intransferibles. No está permitido compartir credenciales entre trabajadores o terceros.</li>
+
+                         <li data-i18n="terms.s3.l4">
+                            El establecimiento es responsable de gestionar correctamente los roles y permisos asignados dentro del sistema.</li>
+                    </ul>
+                </div>
+
+                <!-- 4 -->
+                <div class="terms-block">
+                     <h2 data-i18n="terms.s4.title">
+                        4. Condiciones de Uso Aceptable
+                    </h2>
+
+                    <p data-i18n="terms.s4.p1">
+                        El usuario se compromete a utilizar Senit únicamente para fines relacionados con la gestión legítima de establecimientos de hospedaje.
+                    </p>
+
+                    <ul class="terms-list">
+                        <li data-i18n="terms.s4.l1">Ingresar información falsa o manipulada sobre huéspedes, reservas o pagos.</li>
+
+                         <li data-i18n="terms.s4.l2">Intentar acceder sin autorización a cuentas, módulos o información de otros usuarios.</li>
+
+                        <li data-i18n="terms.s4.l3">Realizar modificaciones no autorizadas al sistema o intentar vulnerar su seguridad.</li>
+
+                        <li data-i18n="terms.s4.l4">Utilizar la plataforma para actividades ilegales o contrarias a la ética profesional.</li>
+
+                        <li data-i18n="terms.s4.l5">Compartir información sensible de huéspedes sin consentimiento correspondiente.</li>
+                    </ul>
+
+                    <p data-i18n="terms.s4.p2">
+                        El uso de Senit implica el compromiso de respetar la privacidad, seguridad y correcta gestión de la información registrada en la plataforma.
+                    </p>
+                </div>
+
+                <!-- 5 -->
+                <div class="terms-block">
+                    <h2 data-i18n="terms.s5.title">5. Privacidad y Tratamiento de Datos</h2>
+
+                    <ul class="terms-list">
+                        <li data-i18n="terms.s5.l1">
+                            Senit recopila información relacionada con huéspedes, reservas y operaciones administrativas con la finalidad de gestionar correctamente
+                            los servicios del establecimiento.
+                        </li>
+
+                        <li data-i18n="terms.s5.l2">
+                            Los datos registrados no serán vendidos ni compartidos con terceros sin autorización, salvo requerimiento legal.
+                        </li>
+
+                        <li data-i18n="terms.s5.l3">
+                            El acceso a la información se encuentra restringido únicamente a usuarios autorizados dentro del establecimiento.
+                        </li>
+
+                        <li data-i18n="terms.s5.l4">
+                            El equipo desarrollador se compromete a implementar buenas prácticas de seguridad y protección de datos.
+                        </li>
+
+                        <li data-i18n="terms.s5.l5">
+                            Los establecimientos usuarios son responsables del uso adecuado de la información ingresada en la plataforma.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 6 -->
+                <div class="terms-block">
+                    <h2 data-i18n="terms.s6.title">
+                        6. Responsabilidad Ética y Profesional
+                    </h2>
+
+                    <p data-i18n="terms.s6.p1">
+                        El equipo desarrollador de <strong>Senit</strong> asume el compromiso de desarrollar el sistema siguiendo principios éticos de ingeniería de software,
+                        promoviendo la transparencia, calidad y responsabilidad profesional.
+                    </p>
+
+                    <div class="terms-subblock">
+                        <h3 data-i18n="terms.s6.sb1.title">
+                            6.1 Calidad del Producto
+                        </h3>
+
+                        <p data-i18n="terms.s6.sb1.desc">
+                            El sistema es desarrollado aplicando buenas prácticas de arquitectura de software, diseño orientado al dominio (DDD),
+                            control de versiones y documentación técnica.
+                        </p>
+                    </div>
+
+                    <div class="terms-subblock">
+                        <h3 data-i18n="terms.s6.sb2.title">
+                            6.2 Transparencia
+                        </h3>
+
+                        <p data-i18n="terms.s6.sb2.desc">
+                            El equipo se compromete a comunicar claramente las funcionalidades, limitaciones y estado actual del proyecto,
+                            evitando generar expectativas falsas sobre el sistema.
+                        </p>
+                    </div>
+
+                    <div class="terms-subblock">
+                         <h3 data-i18n="terms.s6.sb3.title">
+                            6.3 Trabajo Colaborativo
+                         </h3>
+
+                        <p data-i18n="terms.s6.sb3.desc">
+                            El proyecto se desarrolla mediante coordinación continua entre los integrantes del equipo,
+                            promoviendo respeto mutuo, organización y participación activa.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 7 -->
+                <div class="terms-block">
+                    <h2 data-i18n="terms.s7.title">
+                        7. Transparencia en el Desarrollo
+                    </h2>
+
+                    <p data-i18n="terms.s7.p1">
+                        El desarrollo de Senit se realiza bajo un proceso documentado y organizado mediante herramientas de colaboración y control de versiones.
+                    </p>
+
+                    <div class="terms-subblock">
+                        <h3 data-i18n="terms.s7.sb1.title">
+                            7.1 Control de Versiones
+                        </h3>
+
+                        <p data-i18n="terms.s7.sb1.desc">
+                            El código fuente y documentación del proyecto son gestionados mediante Git y GitHub para asegurar trazabilidad y control de cambios.
+                        </p>
+                    </div>
+
+                    <div class="terms-subblock">
+                        <h3 data-i18n="terms.s7.sb2.title">
+                            7.2 Metodología de Trabajo
+                        </h3>
+
+                        <p data-i18n="terms.s7.sb2.desc">
+                            El equipo sigue una metodología ágil basada en sprints, reuniones periódicas y seguimiento continuo de avances y correcciones.
+                        </p>
+                    </div>
+
+                    <div class="terms-subblock">
+                        <h3 data-i18n="terms.s7.sb3.title">
+                            7.3 Evidencia del Proyecto
+                        </h3>
+
+                        <ul class="terms-list">
+                            <li data-i18n="terms.s7.sb3.l1">Documentación técnica y funcional del sistema.</li>
+
+                             <li data-i18n="terms.s7.sb3.l2">Diagramas UML y modelos de base de datos.</li>
+
+                            <li data-i18n="terms.s7.sb3.l3">Historial de commits y colaboración en GitHub.</li>
+
+                            <li data-i18n="terms.s7.sb3.l4">Capturas y demostraciones funcionales del sistema.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 8 -->
+                <div class="terms-block">
+                    <h2 data-i18n="terms.s8.title">
+                        8. Propiedad Intelectual
+                    </h2>
+
+                    <ul class="terms-list">
+                        <li data-i18n="terms.s8.l1">
+                            El diseño, documentación, código fuente y estructura del sistema Senit pertenecen al equipo desarrollador del proyecto académico.
+                        </li>
+
+                        <li data-i18n="terms.s8.l2">
+                            El uso de la plataforma no otorga derechos de propiedad sobre el software o sus componentes.
+                        </li>
+
+                        <li data-i18n="terms.s8.l3">
+                            El proyecto reconoce y respeta las licencias y derechos de herramientas externas utilizadas durante el desarrollo.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 9 -->
+                <div class="terms-block">
+                    <h2 data-i18n="terms.s9.title">
+                        9. Limitación de Responsabilidad
+                    </h2>
+
+                    <ul class="terms-list">
+                        <li data-i18n="terms.s9.l1">
+                            Senit actúa como una herramienta de apoyo para la gestión operativa y administrativa de establecimientos de hospedaje.
+                        </li>
+
+                        <li data-i18n="terms.s9.l2">
+                            El equipo desarrollador no se responsabiliza por pérdidas económicas, errores operativos o decisiones tomadas exclusivamente
+                            en base a la información registrada en el sistema.
+                        </li>
+
+                        <li data-i18n="terms.s9.l3">
+                            El servicio se proporciona en su estado actual, propio de un proyecto académico en desarrollo.
+                        </li>
+
+                        <li data-i18n="terms.s9.l4">
+                            El equipo se compromete a corregir errores críticos identificados durante el desarrollo y pruebas del sistema.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 10 -->
+                <div class="terms-block">
+                    <h2 data-i18n="terms.s10.title">
+                        10. Modificaciones al Servicio y a los Términos
+                    </h2>
+
+                    <ul class="terms-list">
+                        <li data-i18n="terms.s10.l1">
+                            El equipo podrá actualizar funcionalidades, modificar características del sistema o realizar mejoras según las necesidades del proyecto.
+                        </li>
+
+                        <li data-i18n="terms.s10.l2">
+                            Los Términos y Condiciones podrán actualizarse y dichas modificaciones serán publicadas dentro de la plataforma.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 11 -->
+                <div class="terms-block">
+                    <h2 data-i18n="terms.s11.title">
+                        11. Contacto
+                    </h2>
+
+                     <p data-i18n="terms.s11.p1">
+                        Para consultas, sugerencias o reportes relacionados con el sistema Senit, el usuario podrá comunicarse mediante los canales oficiales
+                        definidos por el equipo del proyecto.
+                    </p>
+                </div>
+
+                <!-- 12 -->
+                <div class="terms-block">
+                     <h2 data-i18n="terms.s12.title">
+                        12. Marco Legal Aplicable
+                    </h2>
+
+                    <p data-i18n="terms.s12.p1">
+                        Los presentes Términos y Condiciones se rigen por la legislación peruana vigente, incluyendo:
+                    </p>
+
+                    <ul class="terms-list">
+                        <li data-i18n="terms.s12.l1">
+                            <strong>Ley N.° 29733</strong> – Ley de Protección de Datos Personales del Perú.</li>
+
+                        <li data-i18n="terms.s12.l2">Principios del Código de Ética del Colegio de Ingenieros del Perú (CIP).</li>
+
+                        <li data-i18n="terms.s12.l3">Principios del Código de Ética de Ingeniería de Software ACM/IEEE.</li>
+                    </ul>
+
+                    <p data-i18n="terms.s12.p2">
+                        Cualquier controversia relacionada con el uso de la plataforma será sometida a la jurisdicción correspondiente de Lima, Perú.
+                    </p>
+                </div>
+
+                <!-- FOOTNOTE -->
+                <div class="terms-footer-note">
+                    <br>
+
+                    <p data-i18n="terms.footer">
+                        Documento elaborado por el equipo de <strong>Senit</strong> — Universidad Peruana de Ciencias Aplicadas (UPC),
+                        desarrollado en el marco del curso <em>1ASI10203 - Aplicaciones Web</em>.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+ <!-- Footer -->
+     <footer>
+
+        <div id="footer-top">
+
+            <div id="senit-social-media">
+
+                <img src="./assets/images/SENIT_logo.png" alt="Logo de senit">
+
+                <div id="social-media-icons">
+
+                    <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                    </a>
+
+                </div>
+
+            </div>
+            
+            <a href="terms.html" data-i18n="footer.terms">Términos y condiciones</a>
+
+            <div id="senit-direct-contact">
+
+                <h3 data-i18n="contact.cta">Escribenos o llámanos</h3>
+                <p>senit@correo.com</p>
+                <p>983 624 321</p>
+
+            </div>
+            
+        </div>
+
+        <div id="footer-bottom">
+
+            <h4 data-i18n="copyright">&copy; 2026 Senit - Todos los derechos reservados </h4>
+
+        </div>  
+
+    </footer>
+
+</body>
+</html>
