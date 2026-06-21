@@ -1,6 +1,6 @@
 @media (max-width: 1180px) {
     nav {
-        width: min(100% - 28px, 980px);
+        width: min(calc(100% - 28px), 980px);
         flex-direction: column;
         align-items: stretch;
     }
@@ -54,7 +54,13 @@
     }
 
     #hero-visual {
-        min-height: 540px;
+        min-height: 520px;
+    }
+
+    #hero-visual img {
+        right: clamp(18px, 7vw, 48px);
+        bottom: 34px;
+        width: clamp(210px, 36%, 285px);
     }
 
     #functions, .pricing-grid {
@@ -132,6 +138,11 @@
         min-height: 430px;
     }
 
+    #hero-visual::before {
+        inset: 28px 8px 32px 8px;
+        border-radius: 32px;
+    }
+
     .dashboard-preview {
         min-height: 320px;
         border-radius: 26px;
@@ -159,8 +170,9 @@
     }
 
     #hero-visual img {
-        width: 210px;
-        right: 0;
+        width: 185px;
+        right: 18px;
+        bottom: 30px;
     }
 
     #functions, .roles-grid, .pricing-grid, .process-timeline {
@@ -212,11 +224,17 @@
     }
 
     #hero-visual {
-        min-height: 360px;
+        min-height: 355px;
     }
 
     .dashboard-preview {
         min-height: 285px;
+    }
+
+    #hero-visual img {
+        width: 142px;
+        right: 12px;
+        bottom: 28px;
     }
 
     .preview-sidebar {
