@@ -1,457 +1,291 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Optimiza tu hostal o motel con Senit. Control por horas, facturación SUNAT y gestión de limpieza en tiempo real">
-    <meta name="keywords"
-        content="software hotelero peru, gestión moteles por horas, pms, facturacion electronica hoteles, control de hoteles peru">
-    <meta name="author" content="Senit Startup Team">
-    <link rel="stylesheet" href="./assets/styles/desktop_styles.css">
-    <link rel="stylesheet" href="./assets/styles/mobile_styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <script type="module" src="./assets/scripts/main.js" defer></script>
-    <title>Senit</title>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Senit centraliza la gestión de hoteles y moteles: habitaciones, reservas, check-in, estadías, alertas, personal, roles, suscripción y pagos." name="description"/>
+  <meta content="senit, software hotelero, gestión de hoteles, gestión de moteles, reservas, check-in, habitaciones, estadías, alertas, personal, roles, suscripción" name="keywords"/>
+  <meta content="Senit Startup Team" name="author"/>
+  <link href="./assets/styles/desktop_styles.css" rel="stylesheet"/>
+  <link href="./assets/styles/mobile_styles.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <script defer src="./assets/scripts/main.js" type="module"></script>
+  <title>Senit - Gestión hotelera para hoteles y moteles</title>
 </head>
-
 <body>
-
-    <header>
-
-        <nav>
-            
-            <div id="menu-bar">
-
-                <div id="senit-logo-container">
-
-                <img src="./assets/images/SENIT_logo.png" alt="Logo de senit">
-
-                </div>
-
-                <div id="mobile-menu">
-
-                    <button aria-label="Menu" id="menu-btn" aria-expanded="false">☰</button>
-
-                </div>
-                
-            </div>
-
-
-            <div id="navbar-options">
-
-                <button id="en-btn">EN</button>
-                <button id="es-btn">ES</button>
-
-                <a data-i18n="navbar.start" href="#">Inicio</a>
-                <a data-i18n="navbar.functions" href="#functionality-section">Funcionalidades</a>
-                <a data-i18n="navbar.plans" href="#suscription-plans-section">Planes</a>
-                <a data-i18n="navbar.contact" href="#contact-section">Contáctanos</a>
-                <a data-i18n="navbar.login" href="https://senit-aplicaciones-web.github.io/senit-webapp/">Ingresa</a>
-
-            </div>
-
-        </nav>
-
-    </header>
-
-
-    <main>
-
-        <section id="hero-section">
-
-            <div id="hero-image-container">
-
-                <img src="./assets/images/hero_section_image.png" alt="Imagen ilustrativa de un hotel">
-
-            </div>
-
-            <div id="hero-text">
-
-                <h1 data-i18n="hero.title">Optimiza la gestión de tu hospedaje</h1>
-
-                <div id="hero-description">
-
-                    <h3 data-i18n="hero.description.hotel">
-                        Centraliza el manejo de las reservas, habitaciones, limpieza, personal
-                        y facturación en un solo lugar.
-                    </h3>
-
-                    <a id="hero-cta" data-i18n="hero.cta" href="#suscription-plans-section">
-                        Comenzar
-                    </a>
-                    
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <section id="functionality-section">
-
-            <h1 data-i18n="functions.title">Lo que brindamos</h1>
-
-            <div id="functions">
-
-                <div class="card-row">
-
-                    <div id="desktop-icon">
-                        🎛️
-                    </div>
-
-                    <div class="left-card">
-
-                        <div id="mobile-icon">
-                            🎛️
-                        </div>
-
-                        <h2 data-i18n="functions.room-control.title">Control de habitaciones</h2>
-
-                        <hr>
-
-                        <h3 data-i18n="functions.room-control.description">
-                            Visualiza en tiempo real el estado de cada habitación
-                            para saber cuáles están libres, ocupadas o en limpieza
-                            y asignarlas sin demoras
-                        </h3>
-
-                    </div>
-
-                    <div class="right-card">
-
-                        <div id="mobile-icon">
-                            ⚡
-                        </div>
-
-                        <h2 data-i18n="functions.reservation.title">Reservas rápidas</h2>
-
-                        <hr>
-
-                        <h3 data-i18n="functions.reservation.description">
-                            Organiza las reservas y agiliza el ingreso y salida de
-                            huéspedes para evitar filas y demoras innecesarias
-                        </h3>
-
-                    </div>
-
-                    <div id="desktop-icon">
-                        ⚡
-                    </div>
-
-                </div>
-
-                <div class="card-row">
-
-                    <div id="desktop-icon">
-                        📋
-                    </div>
-
-                    <div class="left-card">
-
-                        <div id="mobile-icon">
-                            📋
-                        </div>
-
-                        <h2 data-i18n="functions.staff-management.title">Manejo de personal</h2>
-
-                        <hr>
-
-                        <h3 data-i18n="functions.staff-management.description">
-                            Distribuye tareas entre recepción y limpieza de
-                            forma organizada para mejorar la coordinación en
-                            el trabajo diario
-                        </h3>
-
-                    </div>
-
-                    <div class="right-card">
-
-                        <div id="mobile-icon">
-                            ✅
-                        </div>
-
-                        <h2 data-i18n="functions.billing.title">Registro de facturas</h2>
-
-                        <hr>
-
-                        <h3 data-i18n="functions.billing.description">
-                            Lleva un mejor control de los cobros, consumos y
-                            servicios ofrecidos a los huéspedes en un solo lugar
-                        </h3>
-
-                    </div>
-
-                    <div id="desktop-icon">
-                        ✅
-                    </div>
-
-                </div>
-
-            </div>
-
-            <h1 data-i18n="security.title">La confianza es importante</h1>
-
-            <div id="security">
-
-                <div class="card-row">
-
-                    <div class="right-card">
-
-                        <div id="icon">
-                            🔎
-                        </div>
-
-                        <h2 data-i18n="security.updated-data.title">Datos actualizados</h2>
-
-                        <hr>
-
-                        <h3 data-i18n="security.updated-data.description">
-                            La información registrada se muestra a tiempo real
-                            para que el personal trabaje con información actualizada
-                        </h3>
-
-                    </div>
-
-                    <div class="center-card">
-
-                        <div id="icon">
-                            🔒
-                        </div>
-
-                        <h2 data-i18n="security.data.title">Seguridad de datos</h2>
-
-                        <hr>
-
-                        <h3 data-i18n="security.data.description">
-                            La información de cada hospedaje es privado
-                            y no se comparte sin autorización
-                        </h3>
-
-                    </div>
-
-                    <div class="left-card">
-
-                        <div id="icon">
-                            💵
-                        </div>
-
-                        <h2 data-i18n="security.refund.title">Reembolsos</h2>
-
-                        <hr>
-
-                        <h3 data-i18n="security.refund.description">
-                            El reembolso solo aplica si la suscripción se
-                            cancela dentro de los primeros 4 días de uso
-                        </h3>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <section id="suscription-plans-section">
-
-            <h1 data-i18n="suscriptions-title">Elige el plan ideal</h1>
-
-            <div class="card-row">
-
-                <div class="card basic">
-
-                    <h3 data-i18n="suscriptions.card.basic.title">Plan básico</h3>
-
-                    <hr>
-
-                    <h2>S/.29.99</h2>
-
-                    <p data-i18n="suscriptions.card.period">al mes</p>
-
-                    <ul>
-                        <li data-i18n="suscriptions.card.basic.room">Control de habitaciones</li>
-                        <li data-i18n="suscriptions.card.basic.booking">Reservas rápidas</li>
-                        <li data-i18n="suscriptions.card.basic.check">Registro de entrada y salida</li>
-                        <li data-i18n="suscriptions.card.basic.room-status">Estado de habitaciones en tiempo real</li>
-                        <li data-i18n="suscriptions.card.basic.support">Soporte con disponibilidad media</li>
-                    </ul>
-
-                    <a href="#" data-i18n="suscriptions.basic.cta">Probar 7 días gratis</a>
-
-                </div>
-
-                <div class="card pro">
-
-                    <h3 data-i18n="suscriptions.card.pro.title">Plan pro</h3>
-
-                    <hr>
-
-                    <h2>S/.49.99</h2>
-
-                    <p data-i18n="suscriptions.card.period">al mes</p>
-
-                    <ul>
-                        <li data-i18n="suscriptions.card.pro.base">Todo lo del plan básico</li>
-                        <li data-i18n="suscriptions.card.pro.cleaning">Gestión de personal de limpieza</li>
-                        <li data-i18n="suscriptions.card.pro.tasks">Asignación de tareas por área de trabajo</li>
-                        <li data-i18n="suscriptions.card.pro.reports">Reportes diarios de operaciones</li>
-                        <li data-i18n="suscriptions.card.pro.support">Soporte con disponibilidad alta</li>
-                    </ul>
-
-                    <a href="#" data-i18n="suscriptions.card.pro.cta">Comenzar ahora</a>
-
-                </div>
-
-                <div class="card custom">
-
-                    <h3 data-i18n="suscriptions.card.custom.title">Plan personalizado</h3>
-
-                    <hr>
-
-                    <h2 data-i18n="suscriptions.card.custom.message">Consultanos</h2>
-
-                    <ul>
-                        <li data-i18n="suscriptions.card.custom.base">Todo lo del plan pro</li>
-                        <li data-i18n="suscriptions.card.custom.settings">Ajuste de funcionalidades personalizado</li>
-                        <li data-i18n="suscriptions.card.custom.deploy">Acompañamiento en la implementación</li>
-                        <li data-i18n="suscriptions.card.custom.support">Soporte con disponibilidad muy alta</li>
-                    </ul>
-
-                    <a href="#contact-section" data-i18n="suscriptions.card.custom.cta">Más información</a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <section id="contact-section">
-
-            <h1 data-i18n="contact.title">Comunícate con nosotros</h1>
-
-            <div id="contact-container">
-
-                <div id="contact-image-container">
-
-                    <img src="./assets/images/contact_image.jpg" alt="Imagen ilustrativa de contacto para soporte">
-
-                </div>
-
-                <form>
-
-                    <div id="data-container">
-
-                        <div id="user-data">
-
-                            <div class="form-item"> 
-
-                                <label for="name" data-i18n="contact.label.name">Tu nombre:</label>
-                                <input 
-                                 id="name"
-                                 type="text" 
-                                 name="name" 
-                                 autocomplete="name"
-                                 required
-                                >
-                            </div>  
-                            
-                            <div class="form-item"> 
-
-                                <label for="email" data-i18n="contact.label.email">Tu correo electrónico:</label>
-                                <input 
-                                   id="email"
-                                   type="email" 
-                                   name="email" 
-                                   placeholder="email@domain.com"
-                                   autocomplete="email"
-                                   required
-                                >
-
-                            </div> 
-
-                            <div class="form-item"> 
-
-                                <label for="phone" data-i18n="contact.label.number">Tu número:</label>
-                                <input type="text" name="phone" inputmode="numeric" pattern="[0-9]*" placeholder="988876122" required>
-
-                            </div> 
-
-                        </div>
-
-                        <div id="user-message">
-
-                            <div class="form-item">
-                                 
-                                <label for="message" data-i18n="contact.label.message">Escríbenos</label>
-                                <textarea name="message" rows="17" cols="30" required></textarea>
-                            
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <button type="submit" data-i18n="contact.label.send">Enviar</button>
-
-                </form>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <footer>
-
-        <div id="footer-top">
-
-            <div id="senit-social-media">
-
-                <img src="./assets/images/SENIT_logo.png" alt="Logo de senit">
-
-                <div id="social-media-icons">
-
-                    <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
-                        <i class="fab fa-youtube" aria-hidden="true"></i>
-                    </a>
-
-                    <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin" aria-hidden="true"></i>
-                    </a>
-
-                    <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
-                        <i class="fab fa-facebook" aria-hidden="true"></i>
-                    </a>
-
-                </div>
-
-            </div>
-            
-            <a href="terms.html" data-i18n="footer.terms">Términos y condiciones</a>
-
-            <div id="senit-direct-contact">
-
-                <h3 data-i18n="contact.cta">Escribenos o llámanos</h3>
-                <p>senit@correo.com</p>
-                <p>983 624 321</p>
-
-            </div>
-            
+<header>
+  <nav>
+    <div id="menu-bar">
+      <a id="senit-logo-container" href="#hero-section" aria-label="Senit inicio">
+        <img alt="Logo de Senit" src="./assets/images/SENIT_logo.png"/>
+      </a>
+      <div id="mobile-menu">
+        <button aria-expanded="false" aria-label="Menu" id="menu-btn">☰</button>
+      </div>
+    </div>
+    <div id="navbar-options">
+      <button id="en-btn" type="button">EN</button>
+      <button id="es-btn" type="button">ES</button>
+      <a data-i18n="navbar.start" href="#hero-section">Inicio</a>
+      <a data-i18n="navbar.functions" href="#functionality-section">Funcionalidades</a>
+      <a data-i18n="navbar.plans" href="#suscription-plans-section">Planes</a>
+      <a data-i18n="navbar.contact" href="#contact-section">Contáctanos</a>
+      <a class="nav-login" data-i18n="navbar.login" href="https://senit-aplicaciones-web.github.io/senit-webapp/">Ingresa</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section id="hero-section">
+    <div id="hero-text">
+      <span class="eyebrow" data-i18n="hero.badge">Gestión hotelera centralizada</span>
+      <h1 data-i18n="hero.title">Centraliza la gestión de tu hotel o motel</h1>
+      <div id="hero-description">
+        <h3 data-i18n="hero.description.hotel">Administra habitaciones, reservas, check-ins, estadías, alertas, personal, roles, suscripción y pagos desde una sola plataforma.</h3>
+        <p data-i18n="hero.description.guest">Los dueños y gerentes pueden crear la cuenta principal, mientras que recepción ingresa con credenciales asignadas.</p>
+      </div>
+      <div class="hero-actions">
+        <a data-i18n="hero.cta" href="#suscription-plans-section" id="hero-cta">Ver planes</a>
+        <a class="secondary-cta" data-i18n="hero.secondary" href="#functionality-section">Explorar funciones</a>
+      </div>
+      <div class="hero-stats" aria-label="Resumen de funciones">
+        <div><strong>2</strong><span data-i18n="hero.stat.roles">roles principales</span></div>
+        <div><strong>24/7</strong><span data-i18n="hero.stat.operation">control operativo</span></div>
+        <div><strong>1</strong><span data-i18n="hero.stat.platform">plataforma central</span></div>
+      </div>
+    </div>
+
+    <div id="hero-visual" aria-label="Vista previa del panel Senit">
+      <div class="floating-card card-top">
+        <i class="fa-solid fa-bell"></i>
+        <span data-i18n="hero.preview.alert">Alertas de estadía</span>
+      </div>
+      <div class="dashboard-preview">
+        <div class="preview-header">
+          <span></span><span></span><span></span>
         </div>
+        <div class="preview-body">
+          <div class="preview-sidebar"></div>
+          <div class="preview-content">
+            <div class="preview-title"></div>
+            <div class="preview-grid">
+              <div></div><div></div><div></div>
+            </div>
+            <div class="preview-table">
+              <span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img alt="Ilustración de hotel" src="./assets/images/hero_section_image.png"/>
+      <div class="floating-card card-bottom">
+        <i class="fa-solid fa-door-open"></i>
+        <span data-i18n="hero.preview.rooms">Habitaciones disponibles</span>
+      </div>
+    </div>
+  </section>
 
-        <div id="footer-bottom">
+  <section id="functionality-section">
+    <span class="section-kicker" data-i18n="functions.eyebrow">Funciones clave</span>
+    <h1 data-i18n="functions.title">Lo que ofrece Senit</h1>
+    <p class="section-subtitle" data-i18n="functions.subtitle">Una experiencia pensada para recepcionistas, administradores operativos, dueños y gerentes de hospedajes.</p>
 
-            <h4 data-i18n="copyright">&copy; 2026 Senit - Todos los derechos reservados </h4>
+    <div id="functions">
+      <article class="feature-card">
+        <div class="feature-icon">🏨</div>
+        <h2 data-i18n="functions.room-control.title">Habitaciones y disponibilidad</h2>
+        <p data-i18n="functions.room-control.description">Visualiza el estado de cada habitación para identificar si está disponible, ocupada, por vencer, vencida, en limpieza o mantenimiento.</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon">🛎️</div>
+        <h2 data-i18n="functions.reservation.title">Reservas y check-in</h2>
+        <p data-i18n="functions.reservation.description">Registra reservas con datos del huésped, horarios y pago de garantía, y convierte el ingreso en una estadía activa mediante el check-in.</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon">🚨</div>
+        <h2 data-i18n="functions.billing.title">Estadías y alertas</h2>
+        <p data-i18n="functions.billing.description">Supervisa huéspedes alojados, pagos, procesos de check-out, salidas vencidas y estadías próximas a terminar.</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon">👥</div>
+        <h2 data-i18n="functions.staff-management.title">Personal y roles</h2>
+        <p data-i18n="functions.staff-management.description">Crea usuarios para recepción o administración, asigna roles y controla qué funciones puede utilizar cada integrante del hospedaje.</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h2 data-i18n="security.updated-data.title">Paneles por rol</h2>
+        <p data-i18n="security.updated-data.description">El personal operativo accede a recepción, mientras que dueños y gerentes gestionan hotel, habitaciones, personal, suscripción y operación general.</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon">💳</div>
+        <h2 data-i18n="security.refund.title">Suscripción y pagos</h2>
+        <p data-i18n="security.refund.description">Consulta el plan activo, estado del servicio, historial de pagos y opciones disponibles para el hospedaje.</p>
+      </article>
+    </div>
+  </section>
 
-        </div>  
+  <section id="roles-section">
+    <span class="section-kicker" data-i18n="roles.kicker">Experiencia por usuario</span>
+    <h1 data-i18n="roles.title">Cada rol trabaja con las herramientas que necesita</h1>
+    <div class="roles-grid">
+      <article class="role-card reception-role">
+        <div class="role-icon"><i class="fa-solid fa-concierge-bell"></i></div>
+        <h2 data-i18n="roles.reception.title">Recepción / operativo</h2>
+        <p data-i18n="roles.reception.description">El personal de recepción se enfoca en atender la operación diaria del hospedaje.</p>
+        <ul>
+          <li data-i18n="roles.reception.item1">Revisar habitaciones y ocupación.</li>
+          <li data-i18n="roles.reception.item2">Realizar check-in y consultar estadías.</li>
+          <li data-i18n="roles.reception.item3">Registrar reservas y atender alertas.</li>
+        </ul>
+      </article>
+      <article class="role-card owner-role">
+        <div class="role-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <h2 data-i18n="roles.owner.title">Dueño / gerente</h2>
+        <p data-i18n="roles.owner.description">El dueño o gerente administra la configuración y supervisión general del hospedaje.</p>
+        <ul>
+          <li data-i18n="roles.owner.item1">Configurar datos del hotel y habitaciones.</li>
+          <li data-i18n="roles.owner.item2">Gestionar personal, roles y suscripción.</li>
+          <li data-i18n="roles.owner.item3">Supervisar reservas, estadías e ingresos.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
 
-    </footer>
+  <section id="process-section">
+    <span class="section-kicker" data-i18n="process.kicker">Flujo operativo</span>
+    <h1 data-i18n="process.title">Del registro a la operación diaria</h1>
+    <div class="process-timeline">
+      <div class="process-step">
+        <span>01</span>
+        <h3 data-i18n="process.step1.title">Crea o accede</h3>
+        <p data-i18n="process.step1.description">El dueño se registra y el personal operativo inicia sesión con cuentas asignadas.</p>
+      </div>
+      <div class="process-step">
+        <span>02</span>
+        <h3 data-i18n="process.step2.title">Configura el hospedaje</h3>
+        <p data-i18n="process.step2.description">Se registran datos del hotel, habitaciones, usuarios y roles de acceso.</p>
+      </div>
+      <div class="process-step">
+        <span>03</span>
+        <h3 data-i18n="process.step3.title">Gestiona la operación</h3>
+        <p data-i18n="process.step3.description">Se controlan reservas, check-ins, estadías, alertas y salidas.</p>
+      </div>
+      <div class="process-step">
+        <span>04</span>
+        <h3 data-i18n="process.step4.title">Supervisa resultados</h3>
+        <p data-i18n="process.step4.description">El panel administrativo muestra ingresos, ocupación, suscripción y estado del servicio.</p>
+      </div>
+    </div>
+  </section>
 
+  <section id="suscription-plans-section">
+    <span class="section-kicker" data-i18n="plans.kicker">Planes</span>
+    <h1 data-i18n="suscriptions-title">Elige el plan para tu hospedaje</h1>
+    <div class="pricing-grid">
+      <article class="card basic">
+        <div class="plan-tag" data-i18n="plans.basic.badge">Para iniciar</div>
+        <h3 data-i18n="suscriptions.card.basic.title">Plan básico</h3>
+        <h2>S/.29.99</h2>
+        <p data-i18n="suscriptions.card.period">al mes</p>
+        <ul>
+          <li data-i18n="suscriptions.card.basic.room">Panel operativo y control de habitaciones</li>
+          <li data-i18n="suscriptions.card.basic.booking">Registro y consulta de reservas</li>
+          <li data-i18n="suscriptions.card.basic.check">Check-in, estadías y check-out</li>
+          <li data-i18n="suscriptions.card.basic.room-status">Alertas de estadía y estados de habitación</li>
+          <li data-i18n="suscriptions.card.basic.support">Soporte estándar para la operación diaria</li>
+        </ul>
+        <a data-i18n="suscriptions.basic.cta" href="https://senit-aplicaciones-web.github.io/senit-webapp/">Comenzar con básico</a>
+      </article>
+
+      <article class="card pro highlighted-plan">
+        <div class="plan-tag" data-i18n="plans.pro.badge">Más completo</div>
+        <h3 data-i18n="suscriptions.card.pro.title">Plan pro</h3>
+        <h2>S/.49.99</h2>
+        <p data-i18n="suscriptions.card.period">al mes</p>
+        <ul>
+          <li data-i18n="suscriptions.card.pro.base">Todo lo del plan básico</li>
+          <li data-i18n="suscriptions.card.pro.cleaning">Gestión de personal y roles de acceso</li>
+          <li data-i18n="suscriptions.card.pro.tasks">Panel administrativo para dueños y gerentes</li>
+          <li data-i18n="suscriptions.card.pro.reports">Indicadores de ingresos, ocupación y operación</li>
+          <li data-i18n="suscriptions.card.pro.support">Exportación de reportes y soporte prioritario</li>
+        </ul>
+        <a data-i18n="suscriptions.card.pro.cta" href="https://senit-aplicaciones-web.github.io/senit-webapp/">Elegir pro</a>
+      </article>
+
+      <article class="card custom">
+        <div class="plan-tag" data-i18n="plans.custom.badge">A medida</div>
+        <h3 data-i18n="suscriptions.card.custom.title">Plan personalizado</h3>
+        <h2 data-i18n="suscriptions.card.custom.message">Consúltanos</h2>
+        <ul>
+          <li data-i18n="suscriptions.card.custom.base">Todo lo del plan pro</li>
+          <li data-i18n="suscriptions.card.custom.settings">Configuración adaptada al hospedaje</li>
+          <li data-i18n="suscriptions.card.custom.deploy">Acompañamiento en implementación y capacitación</li>
+          <li data-i18n="suscriptions.card.custom.support">Soporte ampliado para crecimiento operativo</li>
+        </ul>
+        <a data-i18n="suscriptions.card.custom.cta" href="#contact-section">Solicitar información</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact-section">
+    <div class="contact-heading">
+      <span class="section-kicker" data-i18n="contact.kicker">Contacto</span>
+      <h1 data-i18n="contact.title">Comunícate con nosotros</h1>
+      <p data-i18n="contact.subtitle">Cuéntanos sobre tu hospedaje y te ayudaremos a elegir la mejor forma de empezar.</p>
+    </div>
+    <div id="contact-container">
+      <div id="contact-image-container">
+        <img alt="Imagen ilustrativa de contacto para soporte" src="./assets/images/contact_image.jpg"/>
+      </div>
+      <form>
+        <div id="data-container">
+          <div id="user-data">
+            <div class="form-item">
+              <label data-i18n="contact.label.name" for="name">Tu nombre:</label>
+              <input autocomplete="name" id="name" name="name" required type="text"/>
+            </div>
+            <div class="form-item">
+              <label data-i18n="contact.label.email" for="email">Tu correo electrónico:</label>
+              <input autocomplete="email" id="email" name="email" placeholder="nombre@correo.com" required type="email"/>
+            </div>
+            <div class="form-item">
+              <label data-i18n="contact.label.number" for="phone">Tu número:</label>
+              <input id="phone" inputmode="numeric" name="phone" pattern="[0-9]*" placeholder="987654321" required type="text"/>
+            </div>
+          </div>
+          <div id="user-message">
+            <div class="form-item">
+              <label data-i18n="contact.label.message" for="message">Cuéntanos sobre tu hospedaje:</label>
+              <textarea id="message" cols="30" name="message" required rows="10"></textarea>
+            </div>
+          </div>
+        </div>
+        <button data-i18n="contact.label.send" type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div id="footer-top">
+    <div id="senit-social-media">
+      <img alt="Logo de Senit" src="./assets/images/SENIT_logo.png"/>
+      <div id="social-media-icons">
+        <a aria-label="YouTube" href="https://www.youtube.com/" target="_blank"><i aria-hidden="true" class="fab fa-youtube"></i></a>
+        <a aria-label="LinkedIn" href="https://www.linkedin.com/" target="_blank"><i aria-hidden="true" class="fab fa-linkedin"></i></a>
+        <a aria-label="Facebook" href="https://www.facebook.com/" target="_blank"><i aria-hidden="true" class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+    <a data-i18n="footer.terms" href="terms.html">Términos y condiciones</a>
+    <div id="senit-direct-contact">
+      <h3 data-i18n="contact.cta">Escríbenos o llámanos</h3>
+      <p>senit@correo.com</p>
+      <p>983 624 321</p>
+    </div>
+  </div>
+  <div id="footer-bottom">
+    <h4 data-i18n="copyright">© 2026 Senit - Todos los derechos reservados</h4>
+  </div>
+</footer>
 </body>
-
 </html>

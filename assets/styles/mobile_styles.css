@@ -1,10 +1,17 @@
-@media (max-width: 1500px) {
-
-    /*===Header styles===*/
-
+@media (max-width: 1180px) {
     nav {
-        display: flex;
+        width: min(100% - 28px, 980px);
         flex-direction: column;
+        align-items: stretch;
+    }
+
+    #menu-bar {
+        width: 100%;
+    }
+
+    #mobile-menu {
+        display: flex;
+        align-items: center;
     }
 
     #navbar-options {
@@ -14,179 +21,227 @@
     #navbar-options.active {
         display: flex;
         flex-direction: column;
-        padding-top: 16px;
-        padding-bottom: 16px;
-        align-items: center;
-        gap: 24px;
-        z-index: 1000;
+        align-items: stretch;
+        gap: 10px;
+        padding-top: 14px;
+        border-top: 1px solid rgba(15, 23, 42, 0.08);
     }
 
-    #navbar-options.active a {
-        color: #FFFFFF;
+    #navbar-options.active a,
+    #navbar-options.active button {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
     }
-
-    #mobile-menu {
-        display: flex;
-    }
-    #mobile-menu button {
-        padding: 8px 16px;
-        font-size: 24px;
-        border-radius: 8px;
-        background-color: #10B981;
-        color: #FFFFFF;
-        border-style: none;
-        cursor: pointer;
-    }
-
-    /*===Header styles===*/
-
-}
-
-@media (max-width: 1080px) {
-
-    /*===Hero section styles===*/
 
     #hero-section {
-        padding: 16px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #hero-image-container {
-        display: none;
+        grid-template-columns: 1fr;
+        padding-top: 60px;
+        min-height: auto;
     }
 
     #hero-text {
-        margin-top: 32px;
-        margin-right: 0;
-        gap: 16px;
+        align-items: center;
+        text-align: center;
     }
 
-    #hero-cta {
-        margin-top: 16px;
+    #hero-text h1 {
+        text-align: center;
     }
 
-    /*===Hero section styles===*/
+    #hero-description {
+        align-items: center;
+    }
 
+    #hero-visual {
+        min-height: 540px;
+    }
 
-    /*===Functionality section styles===*/
+    #functions, .pricing-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 
-    #mobile-icon {
-        display: flex;
-        font-size: 128px;
+    .process-timeline {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    #contact-image-container {
+        min-height: 360px;
+    }
+
+    #contact-image-container img {
+        min-height: 360px;
+    }
+}
+
+@media (max-width: 780px) {
+    html {
+        scroll-padding-top: 98px;
+    }
+
+    body::before {
+        background-size: 32px 32px;
+    }
+
+    nav {
+        margin-top: 12px;
+        border-radius: 20px;
+        padding: 12px;
+    }
+
+    #senit-logo-container img {
+        width: 126px;
+    }
+
+    #hero-section, #functionality-section, #process-section, #suscription-plans-section, #contact-section {
+        width: min(100% - 28px, 680px);
+    }
+
+    #roles-section {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    #hero-section {
+        padding: 44px 0 56px;
+        gap: 28px;
+    }
+
+    #hero-description h3 {
+        font-size: 1.05rem;
+    }
+
+    .hero-actions {
+        width: 100%;
         justify-content: center;
-    }    
-    
-    .card-row {
-        flex-direction: column;
     }
 
-    #desktop-icon {
+    #hero-cta, .secondary-cta {
+        width: 100%;
+    }
+
+    .hero-stats {
+        grid-template-columns: 1fr;
+    }
+
+    #hero-visual {
+        min-height: 430px;
+    }
+
+    .dashboard-preview {
+        min-height: 320px;
+        border-radius: 26px;
+    }
+
+    .preview-body {
+        grid-template-columns: 68px 1fr;
+        min-height: 266px;
+    }
+
+    .preview-content {
+        padding: 22px;
+    }
+
+    .preview-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .preview-grid div {
+        height: 52px;
+    }
+
+    .floating-card {
         display: none;
     }
-        
 
-    /*===Functionality section styles===*/
-
-
-    /*===Suscription plans section styles===*/
-
-    #suscription-plans-section .card-row {
-        flex-direction: column;
+    #hero-visual img {
+        width: 210px;
+        right: 0;
     }
 
-    /*===Suscription plans section styles===*/
+    #functions, .roles-grid, .pricing-grid, .process-timeline {
+        grid-template-columns: 1fr;
+    }
 
+    .feature-card {
+        min-height: auto;
+    }
 
-    /*===Contact form section styles===*/
+    .role-card {
+        min-height: auto;
+    }
+
+    .card {
+        min-height: auto;
+    }
+
+    #data-container {
+        grid-template-columns: 1fr;
+    }
+
+    #contact-container form {
+        padding: 24px;
+        border-radius: 24px;
+    }
+
+    #contact-container button {
+        width: 100%;
+    }
+
+    #footer-top {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 460px) {
+    h1 {
+        font-size: 2.25rem;
+        letter-spacing: -0.045em;
+    }
+
+    .section-kicker, .eyebrow {
+        font-size: 0.82rem;
+    }
+
+    #hero-section {
+        width: calc(100% - 24px);
+    }
+
+    #hero-visual {
+        min-height: 360px;
+    }
+
+    .dashboard-preview {
+        min-height: 285px;
+    }
+
+    .preview-sidebar {
+        display: none;
+    }
+
+    .preview-body {
+        grid-template-columns: 1fr;
+    }
+
+    #hero-visual img {
+        width: 165px;
+    }
+
+    .feature-card, .role-card, .process-step, .card {
+        padding: 22px;
+        border-radius: 22px;
+    }
 
     #contact-image-container {
         display: none;
     }
 
-    #data-container {
-        flex-direction: column;
-        gap: 32px;
+    footer {
+        padding-left: 20px;
+        padding-right: 20px;
     }
-
-    /*===Contact form section styles===*/
-
-
-    /*===Footer styles===*/
-
-    #footer-top {
-        flex-direction: column;
-        gap: 32px;
-    }
-
-    #footer-bottom {
-        margin-top: 32px;
-    }
-
-    /*===Footer styles===*/
-
-}
-
-@media (max-width: 420px) {
-
-    /*===Global styles===*/
-
-    h1 {
-        font-size: 48px;
-    }
-
-    /*===Global styles===*/
-
-    /*===Header styles===*/
-
-    nav {
-        padding: 16px;
-        gap: 16px;
-    }
-
-    #menu-bar {
-        gap: 16px;
-    }
-
-    /*===Header styles===*/
-
-    /*===Suscription plans section styles===*/
-
-    #suscription-plans-section .card {
-        padding: 32px;
-        width: 65%;
-        border-radius: 16px;
-    }
-
-    .card h3 {
-        font-size: 24px;
-        text-align: center;
-    }
-
-    .card h2 {
-        font-size: 28px;
-        text-align: center;
-    }
-
-    .card p {
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .card ul {
-        margin-top: auto;
-        margin-bottom: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .card li {
-        font-size: 16px;
-        text-align: center;
-    }
-
-    /*===Suscription plans section styles===*/
-
 }
