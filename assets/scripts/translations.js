@@ -6,6 +6,7 @@ export const translations = {
         "navbar.plans": "Plans",
         "navbar.contact": "Contact us",
         "navbar.login": "Login",
+        "navbar.aboutUs": "About us",
 
         "hero.badge": "Centralized hotel management",
         "hero.secondary": "Explore features",
@@ -17,6 +18,10 @@ export const translations = {
 
         "functions.eyebrow": "Key features",
         "functions.subtitle": "An experience designed for receptionists, operations administrators, owners and accommodation managers.",
+
+        "product.kicker": "About the product",
+        "product.title": "See how Senit works",
+        "product.subtitle": "Watch a quick explanation of the platform, its approach and the main benefits for accommodation management.",
 
         "roles.kicker": "User experience",
         "roles.title": "Each role works with the tools it needs",
@@ -30,6 +35,10 @@ export const translations = {
         "roles.owner.item1": "Configure hotel data and rooms.",
         "roles.owner.item2": "Manage staff, roles and subscription.",
         "roles.owner.item3": "Supervise reservations, stays and revenue.",
+
+        "about.kicker": "About us",
+        "about.title": "Meet the team behind Senit",
+        "about.subtitle": "A team focused on building clear, useful tools designed to improve the daily operation of accommodations.",
 
         "process.kicker": "Operational flow",
         "process.title": "From setup to daily operation",
@@ -261,6 +270,7 @@ export const translations = {
         "navbar.plans": "Planes",
         "navbar.contact": "Contáctanos",
         "navbar.login": "Ingresa",
+        "navbar.aboutUs": "Sobre nosotros",
 
         "hero.badge": "Gestión hotelera centralizada",
         "hero.secondary": "Explorar funciones",
@@ -272,6 +282,10 @@ export const translations = {
 
         "functions.eyebrow": "Funciones clave",
         "functions.subtitle": "Una experiencia pensada para recepcionistas, administradores operativos, dueños y gerentes de hospedajes.",
+
+        "product.kicker": "Acerca del producto",
+        "product.title": "Descubre cómo funciona Senit",
+        "product.subtitle": "Mira una explicación rápida de la plataforma, su enfoque y los beneficios principales para el hospedaje.",
 
         "roles.kicker": "Experiencia por usuario",
         "roles.title": "Cada rol trabaja con las herramientas que necesita",
@@ -285,6 +299,10 @@ export const translations = {
         "roles.owner.item1": "Configurar datos del hotel y habitaciones.",
         "roles.owner.item2": "Gestionar personal, roles y suscripción.",
         "roles.owner.item3": "Supervisar reservas, estadías e ingresos.",
+
+        "about.kicker": "Sobre nosotros",
+        "about.title": "Conoce al equipo detrás de Senit",
+        "about.subtitle": "Un equipo orientado a construir herramientas claras, útiles y pensadas para mejorar la operación diaria de los hospedajes.",
 
         "process.kicker": "Flujo operativo",
         "process.title": "Del registro a la operación diaria",

@@ -22,8 +22,8 @@
         display: flex;
         flex-direction: column;
         align-items: stretch;
-        gap: 10px;
-        padding-top: 14px;
+        gap: 18px;
+        padding: 22px 0 10px;
         border-top: 1px solid rgba(15, 23, 42, 0.08);
     }
 
@@ -32,6 +32,8 @@
         width: 100%;
         text-align: center;
         justify-content: center;
+        padding-top: 0.9rem;
+        padding-bottom: 0.9rem;
     }
 
     #hero-section {
@@ -57,10 +59,12 @@
         min-height: 520px;
     }
 
-    #hero-visual img {
-        right: clamp(18px, 7vw, 48px);
-        bottom: 34px;
-        width: clamp(210px, 36%, 285px);
+    .preview-screen {
+        min-height: 380px;
+    }
+
+    .preview-screen img {
+        width: min(100%, 440px);
     }
 
     #functions, .pricing-grid {
@@ -86,7 +90,11 @@
 
 @media (max-width: 780px) {
     html {
-        scroll-padding-top: 98px;
+        scroll-padding-top: 140px;
+    }
+
+    section[id] {
+        scroll-margin-top: 140px;
     }
 
     body::before {
@@ -103,7 +111,7 @@
         width: 126px;
     }
 
-    #hero-section, #functionality-section, #process-section, #suscription-plans-section, #contact-section {
+    #hero-section, #functionality-section, #about-product-section, #process-section, #suscription-plans-section, #contact-section, #about-us-section {
         width: min(100% - 28px, 680px);
     }
 
@@ -128,10 +136,6 @@
 
     #hero-cta, .secondary-cta {
         width: 100%;
-    }
-
-    .hero-stats {
-        grid-template-columns: 1fr;
     }
 
     #hero-visual {
@@ -165,14 +169,12 @@
         height: 52px;
     }
 
-    .floating-card {
-        display: none;
+    .preview-screen {
+        min-height: 320px;
     }
 
-    #hero-visual img {
-        width: 185px;
-        right: 18px;
-        bottom: 30px;
+    .preview-screen img {
+        width: min(100%, 360px);
     }
 
     #functions, .roles-grid, .pricing-grid, .process-timeline {
@@ -181,6 +183,23 @@
 
     .feature-card {
         min-height: auto;
+    }
+
+    #about-product-section {
+        padding: 12px 0 72px;
+    }
+
+    #about-the-product {
+        padding: 22px;
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #about-the-product .about-copy {
+        align-items: center;
+        text-align: center;
     }
 
     .role-card {
@@ -231,12 +250,6 @@
         min-height: 285px;
     }
 
-    #hero-visual img {
-        width: 142px;
-        right: 12px;
-        bottom: 28px;
-    }
-
     .preview-sidebar {
         display: none;
     }
@@ -245,13 +258,28 @@
         grid-template-columns: 1fr;
     }
 
-    #hero-visual img {
-        width: 165px;
-    }
-
     .feature-card, .role-card, .process-step, .card {
         padding: 22px;
         border-radius: 22px;
+    }
+
+    #about-the-product, #about-us-section {
+        gap: 18px;
+    }
+
+    #about-product-section .video-embed {
+        width: min(100%, 760px);
+        max-width: 760px;
+    }
+
+    .video-embed,
+    .about-us-video {
+        border-radius: 22px;
+    }
+
+    #about-us-section .about-us-video {
+        width: min(100%, 720px);
+        max-width: 100%;
     }
 
     #contact-image-container {
@@ -261,5 +289,14 @@
     footer {
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    #about-the-product {
+        max-width: 100%;
+    }
+
+    #about-product-section .video-embed {
+        width: min(100%, 760px);
+        max-width: 760px;
     }
 }

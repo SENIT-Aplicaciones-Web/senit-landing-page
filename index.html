@@ -29,6 +29,7 @@
       <a data-i18n="navbar.start" href="#hero-section">Inicio</a>
       <a data-i18n="navbar.functions" href="#functionality-section">Funcionalidades</a>
       <a data-i18n="navbar.plans" href="#suscription-plans-section">Planes</a>
+      <a data-i18n="navbar.aboutUs" href="#about-us-section">Sobre nosotros</a>
       <a data-i18n="navbar.contact" href="#contact-section">Contáctanos</a>
       <a class="nav-login" data-i18n="navbar.login" href="https://senit-aplicaciones-web.github.io/senit-webapp/">Ingresa</a>
     </div>
@@ -48,39 +49,16 @@
         <a data-i18n="hero.cta" href="#suscription-plans-section" id="hero-cta">Ver planes</a>
         <a class="secondary-cta" data-i18n="hero.secondary" href="#functionality-section">Explorar funciones</a>
       </div>
-      <div class="hero-stats" aria-label="Resumen de funciones">
-        <div><strong>2</strong><span data-i18n="hero.stat.roles">roles principales</span></div>
-        <div><strong>24/7</strong><span data-i18n="hero.stat.operation">control operativo</span></div>
-        <div><strong>1</strong><span data-i18n="hero.stat.platform">plataforma central</span></div>
-      </div>
     </div>
 
-    <div id="hero-visual" aria-label="Vista previa del panel Senit">
-      <div class="floating-card card-top">
-        <i class="fa-solid fa-bell"></i>
-        <span data-i18n="hero.preview.alert">Alertas de estadía</span>
-      </div>
+    <div id="hero-visual" aria-label="Vista previa de la aplicación Senit">
       <div class="dashboard-preview">
-        <div class="preview-header">
-          <span></span><span></span><span></span>
+        <div class="preview-header" aria-hidden="true">
+          <div class="window-dot"></div><div class="window-dot"></div><div class="window-dot"></div>
         </div>
-        <div class="preview-body">
-          <div class="preview-sidebar"></div>
-          <div class="preview-content">
-            <div class="preview-title"></div>
-            <div class="preview-grid">
-              <div></div><div></div><div></div>
-            </div>
-            <div class="preview-table">
-              <span></span><span></span><span></span><span></span>
-            </div>
-          </div>
+        <div class="preview-screen">
+          <img alt="Vista previa de la aplicación Senit" src="./assets/images/hero_section_image.png"/>
         </div>
-      </div>
-      <img alt="Ilustración de hotel" src="./assets/images/hero_section_image.png"/>
-      <div class="floating-card card-bottom">
-        <i class="fa-solid fa-door-open"></i>
-        <span data-i18n="hero.preview.rooms">Habitaciones disponibles</span>
       </div>
     </div>
   </section>
@@ -91,40 +69,59 @@
     <p class="section-subtitle" data-i18n="functions.subtitle">Una experiencia pensada para recepcionistas, administradores operativos, dueños y gerentes de hospedajes.</p>
 
     <div id="functions">
-      <article class="feature-card">
+      <div class="feature-card">
         <div class="feature-icon">🏨</div>
         <h2 data-i18n="functions.room-control.title">Habitaciones y disponibilidad</h2>
         <p data-i18n="functions.room-control.description">Visualiza el estado de cada habitación para identificar si está disponible, ocupada, por vencer, vencida, en limpieza o mantenimiento.</p>
-      </article>
-      <article class="feature-card">
+      </div>
+      <div class="feature-card">
         <div class="feature-icon">🛎️</div>
         <h2 data-i18n="functions.reservation.title">Reservas y check-in</h2>
         <p data-i18n="functions.reservation.description">Registra reservas con datos del huésped, horarios y pago de garantía, y convierte el ingreso en una estadía activa mediante el check-in.</p>
-      </article>
-      <article class="feature-card">
+      </div>
+      <div class="feature-card">
         <div class="feature-icon">🚨</div>
         <h2 data-i18n="functions.billing.title">Estadías y alertas</h2>
         <p data-i18n="functions.billing.description">Supervisa huéspedes alojados, pagos, procesos de check-out, salidas vencidas y estadías próximas a terminar.</p>
-      </article>
-      <article class="feature-card">
+      </div>
+      <div class="feature-card">
         <div class="feature-icon">👥</div>
         <h2 data-i18n="functions.staff-management.title">Personal y roles</h2>
         <p data-i18n="functions.staff-management.description">Crea usuarios para recepción o administración, asigna roles y controla qué funciones puede utilizar cada integrante del hospedaje.</p>
-      </article>
-      <article class="feature-card">
+      </div>
+      <div class="feature-card">
         <div class="feature-icon">📊</div>
         <h2 data-i18n="security.updated-data.title">Paneles por rol</h2>
         <p data-i18n="security.updated-data.description">El personal operativo accede a recepción, mientras que dueños y gerentes gestionan hotel, habitaciones, personal, suscripción y operación general.</p>
-      </article>
-      <article class="feature-card">
+      </div>
+      <div class="feature-card">
         <div class="feature-icon">💳</div>
         <h2 data-i18n="security.refund.title">Suscripción y pagos</h2>
         <p data-i18n="security.refund.description">Consulta el plan activo, estado del servicio, historial de pagos y opciones disponibles para el hospedaje.</p>
-      </article>
+      </div>
     </div>
   </section>
 
-  <section id="roles-section">
+  <section id="about-product-section" aria-labelledby="about-product-title">
+    <div id="about-the-product">
+      <div class="about-copy">
+        <span class="section-kicker" data-i18n="product.kicker">Acerca del producto</span>
+        <h2 id="about-product-title" data-i18n="product.title">Descubre cómo funciona Senit</h2>
+        <p data-i18n="product.subtitle">Mira una explicación rápida de la plataforma, su enfoque y los beneficios principales para el hospedaje.</p>
+      </div>
+      <div class="video-embed">
+        <iframe
+          src="https://www.youtube.com/embed/bC2gh4G2h78"
+          title="Video sobre el producto Senit"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+<section id="roles-section">
+
     <span class="section-kicker" data-i18n="roles.kicker">Experiencia por usuario</span>
     <h1 data-i18n="roles.title">Cada rol trabaja con las herramientas que necesita</h1>
     <div class="roles-grid">
@@ -226,6 +223,21 @@
       </article>
     </div>
   </section>
+
+
+<section id="about-us-section">
+  <span class="section-kicker" data-i18n="about.kicker">Sobre nosotros</span>
+  <h1 data-i18n="about.title">Conoce al equipo detrás de Senit</h1>
+  <p class="section-subtitle" data-i18n="about.subtitle">Un equipo orientado a construir herramientas claras, útiles y pensadas para mejorar la operación diaria de los hospedajes.</p>
+  <div class="about-us-video">
+    <iframe
+      src="https://www.youtube.com/embed/uo--BYZGQGM"
+      title="Video sobre nosotros"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+      loading="lazy"></iframe>
+  </div>
+</section>
 
   <section id="contact-section">
     <div class="contact-heading">
